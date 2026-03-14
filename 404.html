@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      window.location.replace(
+        "/" +
+          window.location.pathname.slice(1).replace(/\//g, "~and~") +
+          (window.location.search
+            ? "~and~" + window.location.search.slice(1)
+            : "") +
+          window.location.hash,
+      );
+    </script>
+  </head>
+</html>
